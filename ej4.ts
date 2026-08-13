@@ -67,3 +67,12 @@ export default {
   EmpleadoPorComision,
   calcularNomina,
 };
+
+console.log("Ejercicio 4: Sueldos");
+const empleado1 = new EmpleadoFijo("Carlos", 4, 60000);
+const empleado2 = new EmpleadoPorHoras("Sofía", 1, 120, 3000);
+const empleado3 = new EmpleadoPorComision("Daniel", 2, 15000, 0.1);
+console.log("Sueldo fijo:", empleado1.calcularSueldo());
+console.log("Sueldo por horas:", empleado2.calcularSueldo());
+console.log("Sueldo por comisión:", empleado3.calcularSueldo());
+console.log("Nomina total:", calcularNomina([empleado1, empleado2, empleado3]));

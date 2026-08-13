@@ -45,3 +45,10 @@ export class CuentaBancaria {
 }
 
 export default CuentaBancaria;
+
+console.log("Ejercicio 2: Cuenta Bancaria");
+const cuenta = new CuentaBancaria("Ana", 1000);
+cuenta.depositar(500);
+cuenta.retirar(200);
+console.log("Saldo actual:", cuenta.consultarSaldo());
+console.log("Historial:", cuenta.obtenerHistorial());

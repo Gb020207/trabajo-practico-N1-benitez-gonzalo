@@ -45,3 +45,12 @@ export class Persona {
 }
 
 export default Persona;
+
+console.log("Ejercicio 5: Persona");
+const persona = new Persona("40123456", "Gonzalo", 24, "gonzalo@email.com");
+console.log("Datos públicos:", persona.datosPublicos);
+console.log("¿Es mayor de edad?", persona.esMayorDeEdad);
+persona.edad = 30;
+persona.email = "nuevo@email.com";
+console.log("Edad actual:", persona.edad);
+console.log("Email actual:", persona.email);

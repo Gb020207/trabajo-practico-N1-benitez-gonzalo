@@ -31,3 +31,11 @@ constructor(nombre: string,precio: number,categoria: string,stock: number){
 }
 
 export default Producto;
+
+console.log("Ejercicio 1: Producto");
+const producto = new Producto("Notebook", 1500, "Tecnología", 10);
+console.log(producto.describir());
+console.log("Hay stock para 3 unidades:", producto.hayStock(3));
+console.log("Precio con descuento del 10%:", producto.aplicarDescuento(10));
+producto.venderUnidades(2);
+console.log("Stock luego de vender 2:", producto.stock);
